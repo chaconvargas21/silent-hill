@@ -1,7 +1,34 @@
-$text: orange;
-$bg: black;
-
-body{
-    color: $text;
-    background: $bg;
+$font: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif;
+$primary-color: #4D4D4D;
+$secondary-color: #B3B3B3;
+$bg-primary: #1A1A1A;
+$bg-secondary: #E5E5E5;
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: $font;
+    font-size: 100%;
+    color: $primary-color;
+    background: linear-gradient($bg-primary, $bg-secondary);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .title{
+        font-size: 6em;
+        color:  transparent;
+        margin: 1em;
+        text-shadow: 0 0 5px $secondary-color;
+    }
+    .item{
+        span {
+            font-size: 2em;
+            text-shadow: 3px 5px 2px $primary-color;
+            &:hover{
+                color: $secondary-color;
+            }
+        }
+    }
 }
