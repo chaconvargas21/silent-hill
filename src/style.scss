@@ -1,34 +1,125 @@
-$font: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif;
-$primary-color: #4D4D4D;
-$secondary-color: #B3B3B3;
-$bg-primary: #1A1A1A;
-$bg-secondary: #E5E5E5;
-html, body {
-    margin: 0;
-    height: 100%;
-    font-family: $font;
-    font-size: 100%;
-    color: $primary-color;
-    background: linear-gradient($bg-primary, $bg-secondary);
+$font: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia,
+  serif;
+$primary-text: #4d4d4d;
+$secondary-text: #b3b3b3;
+$primary-bg: #1a1a1a;
+$secondary-bg: #e5e5e5;
+
+html,
+body {
+  margin: 0;
+  font-family: $font;
+  font-size: 100%;
+  color: $primary-text;
 }
-.card{
+
+.menu {
+  height: 100vh;
+  background-size: cover;
+  background-image: url("../assets/images/menu-img.jpg");
+  opacity: 0.9;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .title {
+    text-align: center;
+    span {
+      font-size: 6em;
+      font-weight: bold;
+      color: $secondary-bg;
+      text-shadow: 0 0 5px $primary-bg;
+    }
+    margin: 2em 0 9em 0;
+  }
+  .item {
+    span {
+      font-size: 2em;
+      text-shadow: 3px 5px 0px rgb(0, 0, 0);
+      letter-spacing: 0.2rem;
+      &:hover {
+        color: $secondary-text;
+      }
+    }
+  }
+}
+
+.inventory {
+  height: 100vh;
+  background-size: cover;
+  background-image: url("../assets/images/landscape-img.jpg");
+  opacity: 0.9;
+
+  .container {
+    height: 100%;
+
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .title{
-        font-size: 6em;
-        color:  transparent;
-        margin: 1em;
-        text-shadow: 0 0 5px $secondary-color;
-    }
-    .item{
-        span {
-            font-size: 2em;
-            text-shadow: 3px 5px 2px $primary-color;
-            &:hover{
-                color: $secondary-color;
-            }
+
+    .row {
+      display: flex;
+      flex: 1 1 0px;
+      .card {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 0px;
+        .title {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          flex-grow: 0.1;
+          span {
+            background-color: blue;
+            margin: 0 2rem 0 2rem;
+            line-height: 40%;
+            border-radius: 2rem;
+            text-align: center;
+            font-size: 2rem;
+            color: $secondary-bg;
+            text-shadow: 3px 5px 0px rgb(0, 0, 0);
+          }
         }
+        .body {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          flex-grow: 0.9;
+          background-size: 100% 100%;
+  
+          span {
+            margin: 0 auto;
+            font-size: 2rem;
+            color: $secondary-bg;
+            svg {
+              width: 80px;
+              height: 80px;
+              background-size: cover;
+            }
+          }
+        }
+      }
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
 }
