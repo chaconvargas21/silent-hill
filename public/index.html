@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="menu">
+    <div class="menu"> 
         <div class="title"><span>SILENT RESUME</br>THE ROOM</span></div>
         <div class="item"><span>New Game</span> </div>
         <div class="item"><span>Continue</span> </div>
@@ -16,58 +16,59 @@
     </div>
     <div class="inventory">
         <div class="container">
-            <div class="row">
-                <div class="card">
-                    <div class="title"><span>Status</span></div>
-                    <div class="body"><span>Body</span></div>
-                </div>
-                <div class="card">
-                    <div class="title"><span>Equipment</span></div>
-                    <div class="body"><span>Body</span></div>
-                </div>
-                <div class="card">
-                    <div class="title"><span>Command</span></div>
-                    <div class="body"><span>Body</span></div>
-                </div>
+            <div class="bar">
+              <div class="option"><span>Status</span></div>
+              <div class="option"><span>Equipment</span></div> 
+              <div class="option"><span>Command</span></div> 
             </div>
             <div class="row">
-                <div class="card" id="1">
-                    <div class="title"></div>
-                    <div class="body"><span></span></div>
+                <div class="card">
+                    <div class="body"><div class="item" id="character"></div></div>
                 </div>
-                <div class="card" id="2">
-                    <div class="title"></div>
-                    <div class="body"><span><svg></svg></span></div>
+                <div class="card">
+                    <div class="body"><div class="item" id="selected"></div></div>
                 </div>
-                <div class="card" id="3">
-                    <div class="title"></div>
-                    <div class="body"><span></span></div>
-                </div>
-                <div class="card" id="4">
-                    <div class="title"></div>
-                    <div class="body"><span><svg></svg></span></div>
-                </div>
-                <div class="card" id="5">
-                    <div class="title"></div>
-                    <div class="body"><span></span></div>
+                <div class="card">
+                    <div class="body"><span>Use</span><span>Examine</span></div>
                 </div>
             </div>
             <div class="row">
                 <div class="card">
-                    <div class="title"><span>Status</span></div>
-                    <div class="body"><span>Body</span></div>
+                    <div class="body"><div class="item"></div></div>
                 </div>
                 <div class="card">
-                    <div class="title"><span>Equipment</span></div>
-                    <div class="body"><span>Body</span></div>
+                    <div class="body"><div class="item"></div><span><svg></svg></span></div>
                 </div>
                 <div class="card">
-                    <div class="title"><span>Command</span></div>
-                    <div class="body"><span>Body</span></div>
+                    <div class="body"><div class="item" id="item-selected"></div></div>
                 </div>
+                <div class="card">
+                    <div class="body"><div class="item"></div><span><svg></svg></span></div>
+                </div>
+                <div class="card">
+                    <div class="body"><div class="item"></div></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <div class="title"><span>Fraud Alert Communication BCP, NTTData (2022-2023)</span></div>
+                    <div class="body">
+                        <p class="content">I was part of development team, being Frontend developer using Angular framework. Besides that going through Backend dev role occasionally.</p> 
+                    </div>
+                </div>
+                <!-- <div class="card">
+                    <div class="title"><span>MacSalud Clinic ERP, Smart Cities (2021)</span></div>
+                    <div class="body">
+                        <p class="content">I collaborated in the development of an ERP for the MacSalud clinic, using the Angular framework, as well as Jasmine and Karma to implement unit tests.</p> 
+                    </div>
+                </div> -->
+            </div>
+            <div class="bar">
+                <div class="option"><span>Option</span></div>
+                <div class="option"><span>Memo</span></div> 
+                <div class="option"><span>Map</span></div>
             </div>
         </div>
-        
     </div>
 </body>
 <script src="main.js"></script>

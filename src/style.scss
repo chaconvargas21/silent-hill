@@ -1,16 +1,16 @@
 $font: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia,
   serif;
-$primary-text: #4d4d4d;
-$secondary-text: #b3b3b3;
-$primary-bg: #1a1a1a;
-$secondary-bg: #e5e5e5;
+$primary-text-color: #4d4d4d;
+$secondary-text-color: #b3b3b3;
+$primary-bg-color: #1a1a1a;
+$secondary-bg-color: #e5e5e5;
 
 html,
 body {
   margin: 0;
   font-family: $font;
   font-size: 100%;
-  color: $primary-text;
+  color: $primary-text-color;
 }
 
 .menu {
@@ -28,8 +28,8 @@ body {
     span {
       font-size: 6em;
       font-weight: bold;
-      color: $secondary-bg;
-      text-shadow: 0 0 5px $primary-bg;
+      color: $secondary-bg-color;
+      text-shadow: 0 0 5px $primary-bg-color;
     }
     margin: 2em 0 9em 0;
   }
@@ -38,8 +38,9 @@ body {
       font-size: 2em;
       text-shadow: 3px 5px 0px rgb(0, 0, 0);
       letter-spacing: 0.2rem;
+      cursor: pointer;
       &:hover {
-        color: $secondary-text;
+        color: $secondary-text-color;
       }
     }
   }
@@ -61,47 +62,103 @@ body {
 
     display: flex;
     flex-direction: column;
-
     .row {
       display: flex;
-      flex: 1 1 0px;
+      flex: 0.8 1 0px;
       .card {
         display: flex;
         flex-direction: column;
         flex: 1 1 0px;
         .title {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          flex-grow: 0.1;
-          span {
-            background-color: blue;
-            margin: 0 2rem 0 2rem;
-            line-height: 40%;
-            border-radius: 2rem;
-            text-align: center;
-            font-size: 2rem;
-            color: $secondary-bg;
-            text-shadow: 3px 5px 0px rgb(0, 0, 0);
-          }
+          flex: 0.2 1 0px;
         }
         .body {
+          flex: 1 1 0px;
+        }
+      }
+      &:nth-child(2) {
+        .body {
+          margin: 0 2rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
-          flex-grow: 0.9;
+        }
+        .item {
+          height: 80%;
           background-size: 100% 100%;
-  
-          span {
-            margin: 0 auto;
-            font-size: 2rem;
-            color: $secondary-bg;
-            svg {
-              width: 80px;
-              height: 80px;
-              background-size: cover;
-            }
+        }
+        span {
+          margin: 0 2rem;
+          font-size: 2em;
+          letter-spacing: 0.2rem;
+          cursor: pointer;
+          &:hover {
+            color: $secondary-text-color;
           }
+        }
+        #character {
+          background-image: url("../assets/images/character.gif");
+        }
+        #selected{
+          background-image: url("../assets/images/css-icon.png");
+        }
+      }
+      &:nth-child(3) {
+        .body {
+          position: relative;
+        }
+        .item {
+          height: 80%;
+          background-size: 100% 100%;
+        }
+        #item-selected {
+          transform: scale(1.3);
+        }
+        span {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 2rem;
+          color: $secondary-bg-color;
+          svg {
+            width: 80px;
+            height: 80px;
+            background-size: cover;
+          }
+        }
+      }
+      &:nth-child(4) {
+        .body, .title{
+          margin: 0rem 2rem;
+        }
+        p, span{
+          font-size: 1.8rem;
+          color: $secondary-bg-color;
+          text-shadow: 3px 5px 0px rgb(0, 0, 0);
+        }
+        .content {
+          margin: 2rem;
+        }
+      }
+    }
+    .bar {
+      display: flex;
+      flex: 0.2 1 0px;
+      .option {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1 1 0px;
+        margin: 0 2rem;
+        span {
+          background-color: blue;
+          line-height: 40%;
+          border-radius: 2rem;
+          text-align: center;
+          font-size: 2rem;
+          color: $secondary-bg-color;
+          text-shadow: 3px 5px 0px rgb(0, 0, 0);
         }
       }
     }
