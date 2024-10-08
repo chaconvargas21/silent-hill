@@ -98,9 +98,19 @@ body {
         }
         #character {
           background-image: url("./../assets/items/character.gif");
+          position: relative;
         }
         #selected{
           background-image: url("./../assets/items/rifle.gif");
+        }
+        #condition{
+          background-image: url("./../assets/items/condition.gif");
+          position: absolute;
+          left: 50%;
+          bottom: 0%;
+          // transform: translate(-50%, -50%);
+          height: 30%;
+          width: 50%;
         }
       }
       &:nth-child(3) {
