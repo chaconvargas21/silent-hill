@@ -16,7 +16,7 @@ body {
 .menu {
   height: 100vh;
   background-size: cover;
-  background-image: url("../assets/images/menu-img.jpg");
+  background-image: url("./../assets/images/cover.jpg");
   opacity: 0.9;
 
   display: flex;
@@ -49,7 +49,7 @@ body {
 .inventory {
   height: 100vh;
   background-size: cover;
-  background-image: url("../assets/images/landscape-img.jpg");
+  background-image: url("./../assets/images/landscape.jpg");
   opacity: 0.9;
 
   .container {
@@ -97,10 +97,10 @@ body {
           }
         }
         #character {
-          background-image: url("../assets/images/character.gif");
+          background-image: url("./../assets/items/character.gif");
         }
         #selected{
-          background-image: url("../assets/images/css-icon.png");
+          background-image: url("./../assets/items/rifle.gif");
         }
       }
       &:nth-child(3) {
