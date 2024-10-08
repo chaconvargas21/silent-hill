@@ -6,15 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="menu"> 
+    <div id="menu" class="route active"> 
         <div class="title"><span>SILENT HILL</br>THE ROOM</span></div>
-        <div class="item"><span>New Game</span> </div>
+        <div class="item"><span><a href="#inventory" id="new-game-link">New Game</a></span></div>
         <div class="item"><span>Continue</span> </div>
         <div class="item"><span>Load</span> </div>
         <div class="item"><span>Options</span> </div>
         <div class="item"><span>Exit</span> </div>
     </div>
-    <div class="inventory">
+    <div id="inventory" class="route">
         <div class="container">
             <div class="bar">
               <div class="option"><span>Status</span></div>
@@ -58,7 +58,7 @@
                 </div>
             </div>
             <div class="bar">
-                <div class="option"><span>Option</span></div>
+                <div class="option"><span><a href="#menu">Menu</a></span></div>
                 <div class="option"><span>Memo</span></div> 
                 <div class="option"><span>Map</span></div>
             </div>

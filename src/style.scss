@@ -13,7 +13,24 @@ body {
   color: $primary-text-color;
 }
 
-.menu {
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+a:hover {
+  color: inherit;
+}
+
+.route {
+  display: none;
+}
+.route.active {
+  display: block;
+}
+
+#menu {
   height: 100vh;
   background-size: cover;
   background-image: url("./../assets/images/cover.jpg");
@@ -46,7 +63,7 @@ body {
   }
 }
 
-.inventory {
+#inventory {
   height: 100vh;
   background-size: cover;
   background-image: url("./../assets/images/landscape.jpg");
@@ -100,10 +117,10 @@ body {
           background-image: url("./../assets/items/character.gif");
           position: relative;
         }
-        #selected{
+        #selected {
           background-image: url("./../assets/items/rifle.gif");
         }
-        #condition{
+        #condition {
           background-image: url("./../assets/items/condition.gif");
           position: absolute;
           left: 50%;
@@ -139,10 +156,12 @@ body {
         }
       }
       &:nth-child(4) {
-        .body, .title{
+        .body,
+        .title {
           margin: 0rem 2rem;
         }
-        p, span{
+        p,
+        span {
           font-size: 1.8rem;
           color: $secondary-bg-color;
           text-shadow: 3px 5px 0px rgb(0, 0, 0);
