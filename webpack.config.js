@@ -45,4 +45,5 @@ module.exports = {
         hot: true,
         compress: true,
     },
+    devtool: false
 }
