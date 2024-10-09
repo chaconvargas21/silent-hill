@@ -33,7 +33,7 @@ a:hover {
 #menu {
   height: 100vh;
   background-size: cover;
-  background-image: url("./../assets/images/cover.jpg");
+  background-image: url("/assets/images/cover.jpg");
   opacity: 0.9;
 
   display: flex;
@@ -66,7 +66,7 @@ a:hover {
 #inventory {
   height: 100vh;
   background-size: cover;
-  background-image: url("./../assets/images/landscape.jpg");
+  background-image: url("/assets/images/landscape.jpg");
   opacity: 0.9;
 
   .container {
@@ -114,14 +114,14 @@ a:hover {
           }
         }
         #character {
-          background-image: url("./../assets/items/character.gif");
+          background-image: url("/assets/items/character.gif");
           position: relative;
         }
         #selected {
-          background-image: url("./../assets/items/rifle.gif");
+          background-image: url("/assets/items/rifle.gif");
         }
         #condition {
-          background-image: url("./../assets/items/condition.gif");
+          background-image: url("/assets/items/condition.gif");
           position: absolute;
           left: 50%;
           bottom: 0%;

@@ -4,47 +4,47 @@ const items = [
     {
         title: "Handgun",
         content: "Light handgun. Not much stopping power, but easy to use.",
-        img: "./../assets/items/handgun.gif"
+        img: "./assets/items/handgun.gif"
     },
     {
         title: "Rifle",
         content: "Maximum capacity 4 shots. Takes a long time between shots, but each shot is very powerful.",
-        img: "./../assets/items/rifle.gif"
+        img: "./assets/items/rifle.gif"
     },
     {
         title: "Pipe",
         content: "A pipe used for plumbing, usually steel.",
-        img: "./../assets/items/tubeitem.gif"
+        img: "./assets/items/tubeitem.gif"
     },
     {
         title: "Radio",
         content: "Portable radio that emits static when monsters are near.",
-        img: "./../assets/items/radio.gif"
+        img: "./assets/items/radio.gif"
     },
     {
         title: "Health Drink",
         content: "Supplies nutrition to recover a small amount of stamina.",
-        img: "./../assets/items/hd.gif"
+        img: "./assets/items/hd.gif"
     },
     {
         title: "Lighter",
         content: "Metal lighter. Looks like its flame is stronger than normal lighters.",
-        img: "./../assets/items/lighter.gif"
+        img: "./assets/items/lighter.gif"
     },
     {
         title: "First Aid Kit",
         content: "A medical kit; increased healing properties.",
-        img: "./../assets/items/fak.gif"
+        img: "./assets/items/fak.gif"
     },
     {
         title: "Flashlight",
         content: "One touch on/off switch. In the chest pocket.",
-        img: "./../assets/items/ilghtitem.gif"
+        img: "./assets/items/ilghtitem.gif"
     },
     {
         title: "Video Tape",
         content: "Videotape I forgot at the hotel three years ago.",
-        img: "./../assets/items/videotape.gif"
+        img: "./assets/items/videotape.gif"
     },
 ];
 
@@ -59,8 +59,8 @@ for (let i = 0; i < 5; i++) {
 document.querySelector(`#inventory .row:nth-child(4) .title span`).innerText = items[4].title;
 document.querySelector(`#inventory .row:nth-child(4) .content`).innerText = items[4].content;
 
-document.querySelector(`#inventory .row:nth-child(3) .card:nth-child(2) .body span svg`).style.backgroundImage = "url('assets/icons/arrow-left.svg')";
-document.querySelector(`#inventory .row:nth-child(3) .card:nth-child(4) .body span svg`).style.backgroundImage = `url('assets/icons/arrow-right.svg')`;
+document.querySelector(`#inventory .row:nth-child(3) .card:nth-child(2) .body span svg`).style.backgroundImage = "url('./assets/icons/arrow-left.svg')";
+document.querySelector(`#inventory .row:nth-child(3) .card:nth-child(4) .body span svg`).style.backgroundImage = "url('./assets/icons/arrow-right.svg')";
 
 let previous = document.querySelector(`#inventory .row:nth-child(3) .card:nth-child(2) .body span`);
 previous.style.cursor = 'pointer';
