@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script defer src="main.js"></script></head>
+<body>
+    <div id="menu" class="route active"> 
+        <div class="title"><span>SILENT HILL</br>THE ROOM</span></div>
+        <div class="item"><span><a href="#inventory" id="new-game-link">New Game</a></span></div>
+        <div class="item"><span>Continue</span> </div>
+        <div class="item"><span>Load</span> </div>
+        <div class="item"><span>Options</span> </div>
+        <div class="item"><span>Exit</span> </div>
+    </div>
+    <div id="inventory" class="route">
+        <div class="container">
+            <div class="bar">
+              <div class="option"><span>Status</span></div>
+              <div class="option"><span>Equipment</span></div> 
+              <div class="option"><span>Command</span></div> 
+            </div>
+            <div class="row">
+                <div class="card">
+                    <div class="body"><div class="item" id="character"><div class="item" id="condition"></div></div></div>
+                </div>
+                <div class="card">
+                    <div class="body"><div class="item" id="selected"></div></div>
+                </div>
+                <div class="card">
+                    <div class="body"><span>Use</span><span>Examine</span></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <div class="body"><div class="item"></div></div>
+                </div>
+                <div class="card">
+                    <div class="body"><div class="item"></div><span><svg></svg></span></div>
+                </div>
+                <div class="card">
+                    <div class="body"><div class="item" id="item-selected"></div></div>
+                </div>
+                <div class="card">
+                    <div class="body"><div class="item"></div><span><svg></svg></span></div>
+                </div>
+                <div class="card">
+                    <div class="body"><div class="item"></div></div>
+                </div>
+                            </div>
+            <div class="row">
+                <div class="card">
+                    <div class="title"><span></span></div>
+                    <div class="body">
+                        <p class="content"></p> 
+                    </div>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="option"><span><a href="#menu">Menu</a></span></div>
+                <div class="option"><span>Memo</span></div> 
+                <div class="option"><span>Map</span></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
