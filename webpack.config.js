@@ -1,5 +1,4 @@
 const path = require('path');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
@@ -27,9 +26,6 @@ module.exports = {
         ]
     },
     plugins: [
-        new BundleAnalyzerPlugin({
-            openAnalyzer: false
-        }),
         new CopyWebpackPlugin({
             patterns: [
               { from: 'assets', to: 'assets' }
@@ -44,6 +40,5 @@ module.exports = {
         open: true,
         hot: true,
         compress: true,
-    },
-    devtool: false
+    }
 }
